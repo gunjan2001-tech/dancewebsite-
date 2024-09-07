@@ -17,7 +17,8 @@ const contactSchema = new mongoose.Schema({
 const Contact = mongoose.model('contact', contactSchema);
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/contactdance', {  })
+// mongoose.connect('mongodb://localhost/contactdance', {  })
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/contactdance', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log("MongoDB connected successfully"))
     .catch(err => console.error("MongoDB connection error:", err));
 
