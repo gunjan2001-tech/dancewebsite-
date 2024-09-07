@@ -4,8 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require("body-parser"); // Not used, so can be removed
 
 const app = express();
-const port = 8000;
-
+const PORT = process.env.PORT || 3000;
 // Define mongoose schema 
 const contactSchema = new mongoose.Schema({
     name: String,
@@ -52,6 +51,6 @@ app.post('/contact', async (req, res) => {
 
 
 // START THE SERVER
-app.listen(port, () => {
-    console.log(`The application started successfully on port ${port}`);
+app.listen(PORT, () => {
+    console.log(`The application started successfully on port ${PORT}`);
 });
