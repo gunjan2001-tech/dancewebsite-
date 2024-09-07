@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+#logo{
+    display: flex;
+    color: white ;
+    align-items: center;
+    margin: 0px 14px ;
+    font-size: 28px;
+    margin-right: 40px;
+   
+}
+#logo img{
+    height: 50px;
+    filter: invert(1);
+   margin: 0px -10px;
+}
+#navbar{
+    background-color: #e11717;
+    padding: 13px 14px;
+    font-family: "Kanit", sans-serif;
+}
+
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+
+      
+}
+#navbar li{
+    list-style: none;
+      
+}
+#navbar li a{
+    color: white;
+   font-size: 25px;
+   text-decoration: none;
+   padding: 13px 20px ;
+}
+#navbar li a:hover{
+   color: black ;
+}
+#introsection{
+    padding-bottom: 57px ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+    font-size: 50px;
+    background: center /cover no-repeat url("/static/bg.jpg");    
+    height: 425px;
+    background-color: red;
+    
+}
+#introsection div.small{
+    font-size: 35px;
+    margin: -22px 0px ;
+}
+#missionsection{
+    height: 326px;
+    width: 70%;
+    margin: auto;
+
+
+    
+}
+
+#missionsection h2{
+    font-size: 36px;
+    text-align: center;
+    padding-top: 12px;
+    font-family: "Kanit", sans-serif;
+}
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 29%;
+    margin: 23px 20px;
+    height: 209px;
+}
+.card h3{
+    text-align: center;
+    margin: 0px 12px;
+    margin-top: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img{
+    height: 131px;
+    padding: 0px 9px ;
+    margin: 5px 9px;
+   
+}
+.card-img img{
+    height: inherit;
+   
+
+}
+.card-content{
+    padding: 0px 10px;
+}
+.card-content p{
+    font-size: 19px;
+}
+
+
+#sponsersection{
+    height: 300px;
+    background-color: #dfacacea;
+    
+}
+#sponsersection h2{
+    font-size: 36px;
+    text-align: center;
+    padding-top: 12px;
+    font-family: "Kanit", sans-serif;
+}
+#sponsers{
+    height: 191px;
+    max-width: 1000px;
+    margin:  27px auto;
+}
+.spimage{
+    height: 80%;
+    margin: 20px;
+}
+#footer{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    height: 60px;
+    background-color: black;
+}

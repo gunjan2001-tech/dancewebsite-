@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+      ul
+        div#logo 
+          img(src="/static/logo.png")
+          |LDA
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") services]
+        li #[a(href="/") Class info]
+        li #[a(href="/") Contact us]
+
+    section#introsection
+        div Welcome to luci's dance academy
+        div.small Eat Sleep Dance Repeat    
+    section#missionsection
+        h2 Our Mission   
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/logo1.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/logo2.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/logo3.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+    section#sponsersection
+        h2 Our Sponsers    
+        div#sponsers 
+          img(src="/static/logo4.png", alt="sponser image", class="spimage")
+          img(src="/static/logo5.png", alt="sponser image", class="spimage")
+          img(src="/static/logo6.png", alt="sponser image", class="spimage")
+    
+
+    footer#footer
+        | copyright © 2024 lucidanceacademy.com | All Right Reserved  
+    script
+      include ../static/index.js

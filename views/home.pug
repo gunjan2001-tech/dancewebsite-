@@ -1,0 +1,58 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style
+    style
+        include ../static/style.css
+
+block content
+        section#introsection
+            div Welcome to luci's dance academy
+            div.small Eat Sleep Dance Repeat    
+        section#missionsection
+            h2 Our Mission   
+            div.card
+                h3 Dance Perfection
+                div.card-box
+                    div.card-img
+                        img(src="/static/logo1.png")
+                    div.card-content
+                        p This is the best dance academy of the universe
+
+            div.card
+                h3 Dance the way you like
+                div.card-box
+                    div.card-img
+                        img(src="/static/logo2.png")
+                    div.card-content
+                        p This is the best dance academy of the universe
+            
+            div.card
+                h3 Dance the way you like
+                div.card-box
+                    div.card-img
+                        img(src="/static/logo2.png")
+                    div.card-content
+                        p This is the best dance academy of the universe
+            
+            //- div.card
+            //-      h3 Expert Teaching
+            //- div.card-box
+            //-     div.card-img
+            //-         img(src="/static/logo.png")
+            //-     div.card-content
+            //-         p This is the best dance academy of the universe
+
+        section#sponsersection
+            h2 Our Sponsers    
+            div#sponsers 
+                img(src="/static/logo4.png" alt="sponser image" class="spimage")
+                img(src="/static/logo5.png" alt="sponser image" class="spimage")
+                img(src="/static/logo6.png" alt="sponser image" class="spimage")
+
+
+        
+        script
+            include ../static/index.js
